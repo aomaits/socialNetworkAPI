@@ -13,7 +13,6 @@ const thoughtSchema = new Schema(
     createdAt: {
         type: Date,
         default: Date.now,
-        // Use a getter method to format the timestamp on query
     },
     username: {
         type: String,
@@ -29,6 +28,14 @@ const thoughtSchema = new Schema(
     }
 );
 
+// Use a getter method to format the timestamp on query
+thoughtSchema
+    .virtual('formattedThoughtCreatedAt')
+    // Getter
+    .get(function () {
+        return this.createdAt.toLocaleString;
+    });
+
 // Create a virtual property `reactionCount` that gets the length of the thought's reactions array field on query.
 thoughtSchema
     .virtual('reactionCount')
@@ -40,7 +47,4 @@ thoughtSchema
 // Initialize our Thoughts model
 const Thought = model('thought', thoughtSchema);
 
-module.exports = Thought;
-
-
-// Thought model will include Reaction! 
+module.exports = Thought; 

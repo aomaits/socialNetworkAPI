@@ -18,7 +18,6 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            // Use a getter method to format the timestamp on query
         },
     },
     {
@@ -31,7 +30,7 @@ const reactionSchema = new Schema(
 
 
 reactionSchema
-    .virtual('formattedCreatedAt')
+    .virtual('formattedReactionCreatedAt')
     // Getter
     .get(function () {
         return this.createdAt.toLocaleString;
