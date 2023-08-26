@@ -1,13 +1,12 @@
 const router = require('express').Router();
 const {
-//     // TODO Update all these
     getThoughts, 
     getSingleThought,
     createThought,
     updateThought,
     deleteThought,
-//   addTag,
-//   removeTag,
+    addReaction,
+    removeReaction,
 } = require('../../controllers/thoughtController');
 
 // /api/thoughts
@@ -20,10 +19,10 @@ router
     .put(updateThought)
     .delete(deleteThought);
 
-// // /api/applications/:applicationId/tags
-// router.route('/:applicationId/tags').post(addTag);
+// /api/thoughts/:thoughtID/reactions
+router.route('/:thoughtID/reactions').post(addReaction);
 
-// // /api/applications/:applicationId/tags/:tagId
-// router.route('/:applicationId/tags/:tagId').delete(removeTag);
+// /api/thoughts/:thoughtID/reactions/:reactionId
+router.route('/:thoughtID/reactions/:reactionId').delete(removeReaction);
 
 module.exports = router;
