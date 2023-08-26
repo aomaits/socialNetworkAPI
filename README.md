@@ -30,7 +30,7 @@ Others include:
 
 _______________________________________
 
-You can see a video walkthrough of this application's functionality [here](https://drive.google.com/file/d/15BjPWi6yQLn1VpGvwkMRuBD5iaOO9S6V/view). 
+You can see a full video walkthrough of this application's functionality [here](https://drive.google.com/file/d/1EYQcvrG7j9Kk_HMj2jH5VR_LZhJ30Ktt/view). 
 
 ## Credits
 The express and mongoose node packages were utilized in this project. 
