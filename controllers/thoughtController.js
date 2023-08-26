@@ -94,7 +94,7 @@ module.exports = {
                 });
             }
 
-            res.json({ message: 'Application successfully deleted!' });
+            res.json({ message: 'Thought successfully deleted!' });
         } catch (err) {
             res.status(500).json(err);
         }
