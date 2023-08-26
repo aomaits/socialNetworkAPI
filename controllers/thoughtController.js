@@ -94,13 +94,12 @@ module.exports = {
                 });
             }
 
-            res.json({ message: 'Application successfully deleted!' });
+            res.json({ message: 'Thought successfully deleted!' });
         } catch (err) {
             res.status(500).json(err);
         }
     },
     // Add a reaction to a thought. 
-  // Adds a tag to an application. This method is unique in that we add the entire body of the tag rather than the ID with the mongodb $addToSet operator.
     async addReaction(req, res) {
         try {
             const thought = await Thought.findOneAndUpdate(
