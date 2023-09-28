@@ -3,7 +3,7 @@
 ## Description
 This application is the back-end of a social networking site. It was built in MongoDB but mimics a relational database. It is able to store and track users, thoughts, and reactions, with the reactions being built off of a user's published thoughts.  
 
-Future iterations could include a front-end for users to utilize as well as an expanded DB for further referencing and expanded functionality.  
+Future iterations could include a front-end for users to utilize as well as an expanded DB for further referencing and expanded functionality. 
 
 ## Installation
 The user will need to install node packages locally to run this application. 
@@ -22,7 +22,7 @@ A GET request has been made at the url for all users, thus all current users fro
 This is just one of several queries that can be completed. Others include:
 
 - **Viewing all** existing thoughts
-- **Viewing any individual** extisting thought or user. 
+- **Viewing any individual** existing thoughts or users. 
 - **Adding** a new thought, user, reaction, or friend connection. 
 - **Updating** any existing thought or user. 
 - **Deleting** any existing thought, user, reaction, or removing a friend connection. 
