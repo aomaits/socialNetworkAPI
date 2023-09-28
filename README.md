@@ -3,6 +3,8 @@
 ## Description
 This application is the back-end of a social networking site. It was built in MongoDB but mimics a relational database. It is able to store and track users, thoughts, and reactions, with the reactions being built off of a user's published thoughts.  
 
+This project allowed me to practice calling queries using Mongoose and MongoDB. It also allowed me to  familiarize myself with the file structure of a larger project where separation-of-concerns was considered in the architecture. 
+
 Future iterations could include a front-end for users to utilize as well as an expanded DB for further referencing and expanded functionality. 
 
 ## Installation
